@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Demo Web App test suite" parallel="none"
+	thread-count="3">
+	<listeners>
+		<listener
+			class-name="reusableComponents.ListenersImplementation" />
+		<listener
+			class-name="reusableComponents.TestRetryAnalyzerListener" />
+	</listeners>
+	<test name="CreateNewMandateTest">
+		<classes>
+			<class name="Tests.CreateNewMandate" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
