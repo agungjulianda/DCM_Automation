@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Demo Web App test suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="reusableComponents.ListenersImplementation"/>
+    <listener class-name="reusableComponents.TestRetryAnalyzerListener"/>
+  </listeners>
+  <test name="CreateNewMandateTest(failed)">
+    <classes>
+      <class name="Tests.CreateNewMandate">
+        <methods>
+          <include name="tearDown"/>
+          <include name="CreateNewEmandate"/>
+          <include name="LaunchApplication"/>
+        </methods>
+      </class> <!-- Tests.CreateNewMandate -->
+    </classes>
+  </test> <!-- CreateNewMandateTest(failed) -->
+</suite> <!-- Failed suite [Demo Web App test suite] -->

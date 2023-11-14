@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Functional Test" parallel="none"
+	thread-count="3">
+	<listeners>
+		<listener
+			class-name="reusableComponents.ListenersImplementation" />
+		<listener
+			class-name="reusableComponents.TestRetryAnalyzerListener" />
+	</listeners>
+	<test name="Connect New Acount">
+		<classes>
+			<class name="Tests.ConnectNewAccount" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

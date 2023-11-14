@@ -15,8 +15,10 @@ import testBase.TestBase;
 public class HomePageObjects extends TestBase{
 
 
-	By transaction_button = By.xpath("//li[contains(text(),'Transaksi')]");
+	By transaction_button = By.xpath("//li[contains(text(),'Transaksi') or contains(text(),'Transaction')]");
+	By profile_button = By.xpath("//li[contains(text(),'Profil') or contains(text(),'Profile')]");
 	By emandate_button = By.xpath("//body/div[@id='holder']/landing[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[2]/div[8]/div[1]/div[1]");
+	By dcm_menu = By.xpath("//body/div[@id='holder']/profile[1]/div[2]/div[1]/form[1]/div[2]/div[4]");
 	
 
 	//login to App
@@ -26,9 +28,21 @@ public class HomePageObjects extends TestBase{
 
 	}
 	
+	public void profile() throws InterruptedException {
+		TimeUnit.SECONDS.sleep(5);
+		click_custom(DriverFactory.getInstance().getDriver().findElement(profile_button), "ProfileButton");
+
+	}
+	
 	public void emandatemenu() throws InterruptedException {
 		TimeUnit.SECONDS.sleep(5);
 		click_custom(DriverFactory.getInstance().getDriver().findElement(emandate_button), "EmandateButton");
+
+	}
+	
+	public void dcmmenu() throws InterruptedException {
+		TimeUnit.SECONDS.sleep(5);
+		click_custom(DriverFactory.getInstance().getDriver().findElement(dcm_menu), "DCMButton");
 
 	}
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Functional Test]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="reusableComponents.ListenersImplementation"/>
+    <listener class-name="reusableComponents.TestRetryAnalyzerListener"/>
+  </listeners>
+  <test name="Connect New Acount(failed)">
+    <classes>
+      <class name="Tests.ConnectNewAccount">
+        <methods>
+          <include name="ConnectNewAccount"/>
+          <include name="tearDown"/>
+          <include name="LaunchApplication"/>
+        </methods>
+      </class> <!-- Tests.ConnectNewAccount -->
+    </classes>
+  </test> <!-- Connect New Acount(failed) -->
+</suite> <!-- Failed suite [Functional Test] -->

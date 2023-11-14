@@ -17,7 +17,7 @@ public class LoginPageObjects extends TestBase  {
 
 	//login to App
 	public void login(String user, String password) throws InterruptedException {
-		sendKeys_custom(DriverFactory.getInstance().getDriver().findElement(USER), "LoginEmailFIeld", user);
+		sendKeys_custom(DriverFactory.getInstance().getDriver().findElement(USER), "LoginEmailField", user);
 		sendKeys_custom(DriverFactory.getInstance().getDriver().findElement(PASSWORD), "LoginPasswordFIeld", password);
 		TimeUnit.SECONDS.sleep(5);
 		click_custom(DriverFactory.getInstance().getDriver().findElement(LOGIN_BTN), "LoginButton");

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Demo Web App test suite" parallel="tests"
+<suite name="Functional Test" parallel="tests"
 	thread-count="3">
 	<listeners>
 		<listener
