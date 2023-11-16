@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" name="Failed suite [Functional Test]" guice-stage="DEVELOPMENT">
+<suite thread-count="1" name="Failed suite [Functional Test]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="reusableComponents.ListenersImplementation"/>
     <listener class-name="reusableComponents.TestRetryAnalyzerListener"/>
@@ -16,4 +16,15 @@
       </class> <!-- Tests.ConnectNewAccount -->
     </classes>
   </test> <!-- Connect New Acount(failed) -->
+  <test name="Delete Connected Acount(failed)">
+    <classes>
+      <class name="Tests.DeleteConnectedAccount">
+        <methods>
+          <include name="ConnectNewAccount"/>
+          <include name="tearDown"/>
+          <include name="LaunchApplication"/>
+        </methods>
+      </class> <!-- Tests.DeleteConnectedAccount -->
+    </classes>
+  </test> <!-- Delete Connected Acount(failed) -->
 </suite> <!-- Failed suite [Functional Test] -->
