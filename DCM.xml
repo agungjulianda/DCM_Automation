@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Functional Test" parallel="none"
-	thread-count="3">
+	thread-count="1">
 	<listeners>
 		<listener
 			class-name="reusableComponents.ListenersImplementation" />
@@ -13,4 +13,9 @@
 			<class name="Tests.ConnectNewAccount" />
 		</classes>
 	</test> <!-- Test -->
+	<test name="Delete Connected Acount">
+		<classes>
+			<class name="Tests.DeleteConnectedAccount" />
+		</classes>
+	</test>
 </suite> <!-- Suite -->

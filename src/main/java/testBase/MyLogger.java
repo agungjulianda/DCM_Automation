@@ -6,11 +6,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.ThreadContext;
 
-/**
- * @author: Prakash Narkhede
- * @Youtube: https://www.youtube.com/automationtalks
- * @LinkedIn: https://www.linkedin.com/in/panarkhede89/
- */
 public class MyLogger {
 
 	private static Logger logger = LogManager.getLogger();

@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-13T11:36:08Z" name="Functional Test" finished-at="2023-11-13T11:37:51Z" duration-ms="103499">
+  <suite started-at="2023-11-16T09:52:57Z" name="Functional Test" finished-at="2023-11-16T09:54:53Z" duration-ms="116509">
     <groups>
     </groups>
-    <test started-at="2023-11-13T11:36:08Z" name="Connect New Acount" finished-at="2023-11-13T11:37:51Z" duration-ms="103499">
-      <class name="Tests.ConnectNewAccount">
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Tests.ConnectNewAccount@1f97cf0d]" started-at="2023-11-13T18:36:08Z" name="LaunchApplication" finished-at="2023-11-13T18:36:13Z" duration-ms="4575" status="PASS">
+    <test started-at="2023-11-16T09:52:57Z" name="LoginTests" finished-at="2023-11-16T09:53:32Z" duration-ms="34907">
+      <class name="Tests.UserLoginTests">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Tests.UserLoginTests@482bce4f]" started-at="2023-11-16T16:52:57Z" name="LaunchApplication" finished-at="2023-11-16T16:53:09Z" duration-ms="11604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="ConnectNewAccount()[pri:0, instance:Tests.ConnectNewAccount@1f97cf0d]" started-at="2023-11-13T18:36:13Z" name="ConnectNewAccount" finished-at="2023-11-13T18:37:51Z" duration-ms="98563" status="PASS">
+        <test-method signature="UserLoginTest()[pri:0, instance:Tests.UserLoginTests@482bce4f]" started-at="2023-11-16T16:53:09Z" name="UserLoginTest" finished-at="2023-11-16T16:53:31Z" duration-ms="22274" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ConnectNewAccount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ConnectNewAccount@1f97cf0d]" started-at="2023-11-13T18:37:51Z" name="tearDown" finished-at="2023-11-13T18:37:51Z" duration-ms="139" status="PASS">
+        </test-method> <!-- UserLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.UserLoginTests@482bce4f]" started-at="2023-11-16T16:53:31Z" name="tearDown" finished-at="2023-11-16T16:53:32Z" duration-ms="801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.ConnectNewAccount -->
-    </test> <!-- Connect New Acount -->
+      </class> <!-- Tests.UserLoginTests -->
+    </test> <!-- LoginTests -->
+    <test started-at="2023-11-16T09:52:57Z" name="AccessEmandateTest" finished-at="2023-11-16T09:53:44Z" duration-ms="47524">
+      <class name="Tests.AccessEmandate">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Tests.AccessEmandate@378542de]" started-at="2023-11-16T16:52:57Z" name="LaunchApplication" finished-at="2023-11-16T16:53:07Z" duration-ms="10023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="AccessEmandate()[pri:0, instance:Tests.AccessEmandate@378542de]" started-at="2023-11-16T16:53:07Z" name="AccessEmandate" finished-at="2023-11-16T16:53:44Z" duration-ms="36829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccessEmandate -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AccessEmandate@378542de]" started-at="2023-11-16T16:53:44Z" name="tearDown" finished-at="2023-11-16T16:53:44Z" duration-ms="448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.AccessEmandate -->
+    </test> <!-- AccessEmandateTest -->
+    <test started-at="2023-11-16T09:52:57Z" name="CreateNewMandateTest" finished-at="2023-11-16T09:54:53Z" duration-ms="116508">
+      <class name="Tests.CreateNewMandate">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Tests.CreateNewMandate@4e7912d8]" started-at="2023-11-16T16:52:57Z" name="LaunchApplication" finished-at="2023-11-16T16:53:07Z" duration-ms="10187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="CreateNewEmandate()[pri:0, instance:Tests.CreateNewMandate@4e7912d8]" started-at="2023-11-16T16:53:07Z" name="CreateNewEmandate" finished-at="2023-11-16T16:54:53Z" duration-ms="105665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewEmandate -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CreateNewMandate@4e7912d8]" started-at="2023-11-16T16:54:53Z" name="tearDown" finished-at="2023-11-16T16:54:53Z" duration-ms="432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.CreateNewMandate -->
+    </test> <!-- CreateNewMandateTest -->
   </suite> <!-- Functional Test -->
 </testng-results>

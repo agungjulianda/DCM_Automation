@@ -32,7 +32,7 @@ public class ConnectNewAccount extends TestBase{
 		cnaPage.selectAccount("003600420073");
 		cnaPage.thickCheckbox();
 		cnaPage.clickNextButtonCNA();
-		confirmPage.sendOTP("12345678");
+		confirmPage.sendOTP2("12345678");
 		cnaPage.clickOKButtonCNA();
 		dcmPage.selectdebitcard("3063");
 		dcmPage.clickConnectedAccountButton();

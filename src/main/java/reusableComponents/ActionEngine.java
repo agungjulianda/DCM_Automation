@@ -11,11 +11,6 @@ import com.aventstack.extentreports.Status;
 import testBase.DriverFactory;
 import testBase.ExtentFactory;
 
-/**
- * @author: Prakash Narkhede
- * @Youtube: https://www.youtube.com/automationtalks
- * @LinkedIn: https://www.linkedin.com/in/panarkhede89/
- */
 public class ActionEngine {
 
 	//Customized sendkeys method-> To log sendkeys message for every occ.
