@@ -80,7 +80,7 @@ public class ListenersImplementation implements ITestListener{
 
 	public void onStart(ITestContext context) {
 		try {
-			 report = ExtentReportNG.setupExtentReport();
+			 report = ExtentReportNG.setupExtentReport(context.getName());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

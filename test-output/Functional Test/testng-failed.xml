@@ -20,8 +20,8 @@
     <classes>
       <class name="Tests.DeleteConnectedAccount">
         <methods>
-          <include name="ConnectNewAccount"/>
           <include name="tearDown"/>
+          <include name="DeleteConnectedAccount"/>
           <include name="LaunchApplication"/>
         </methods>
       </class> <!-- Tests.DeleteConnectedAccount -->

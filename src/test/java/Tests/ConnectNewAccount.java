@@ -9,6 +9,7 @@ import pageObjects.ConfirmationScreenObjects;
 import pageObjects.DCMPageObjects;
 import pageObjects.HomePageObjects;
 import pageObjects.LoginPageObjects;
+import reusableComponents.Screenshots;
 import testBase.TestBase;
 
 public class ConnectNewAccount extends TestBase{
@@ -18,7 +19,7 @@ public class ConnectNewAccount extends TestBase{
 	DCMPageObjects dcmPage = new DCMPageObjects();
 	CNAPageObjects cnaPage = new CNAPageObjects();
 	ConfirmationScreenObjects confirmPage = new ConfirmationScreenObjects();
-	
+	Screenshots ssUtils = new Screenshots();
 	@Test
 	public void ConnectNewAccount() throws Throwable {
 		
