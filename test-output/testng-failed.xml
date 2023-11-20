@@ -5,26 +5,15 @@
     <listener class-name="reusableComponents.ListenersImplementation"/>
     <listener class-name="reusableComponents.TestRetryAnalyzerListener"/>
   </listeners>
-  <test name="Connect New Acount(failed)">
+  <test name="Test Login(failed)">
     <classes>
-      <class name="Tests.ConnectNewAccount">
-        <methods>
-          <include name="ConnectNewAccount"/>
-          <include name="tearDown"/>
-          <include name="LaunchApplication"/>
-        </methods>
-      </class> <!-- Tests.ConnectNewAccount -->
-    </classes>
-  </test> <!-- Connect New Acount(failed) -->
-  <test name="Delete Connected Acount(failed)">
-    <classes>
-      <class name="Tests.DeleteConnectedAccount">
+      <class name="Tests.PermanetBlockCard">
         <methods>
           <include name="tearDown"/>
-          <include name="DeleteConnectedAccount"/>
           <include name="LaunchApplication"/>
+          <include name="BlockCardPermanent"/>
         </methods>
-      </class> <!-- Tests.DeleteConnectedAccount -->
+      </class> <!-- Tests.PermanetBlockCard -->
     </classes>
-  </test> <!-- Delete Connected Acount(failed) -->
+  </test> <!-- Test Login(failed) -->
 </suite> <!-- Failed suite [Functional Test] -->

@@ -10,7 +10,7 @@
 	</listeners>
 	<test name="Test Login">
 		<classes>
-			<class name="Tests.UserLoginTests" />
+			<class name="Tests.PermanetBlockCard" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -14,7 +14,7 @@ public class UserLoginTests extends TestBase{
 
 	public void UserLoginTest() throws Throwable {
 		
-		loginPage.login("EMANDATE003", "Reskin01");
+		loginPage.login("USER4000", "Reskin01");
 		ssUtils.takeEvidences("Login");
 		Thread.sleep(2000); ////// not required, adding just to see tests are running in parallel
 
